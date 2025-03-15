@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" /> 
+    <title>Documentation Technique Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+        <header>JS Documentation Technique</header>
+        <ul>
+          <li><a id"nav-link" href="#Introduction_to_javascript">Introduction to javascript</a></li>
+          <li><a id"nav-link" href="#what_do_you_know">What Do you Know</a></li>
+          <li><a id"nav-link" href="#how_you_learn_JavaScript">how you learn JavaScript</a></li>
+          <li><a id"nav-link" href="#Hello_world">Hello world</a></li>
+          <li><a id"nav-link" href="#Data_type_of_Variables">Data type of Variables</a></li>
+          <li><a id"nav-link" href="#the_different_type_of_variables">the different type of variables</a></li>
+          <li><a id"nav-link" href="#Arithmetics_Operators">Arithmetics Operators</a></li>
+          <li><a id"nav-link" href="#Logics_Operators">Logics Operators</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      
+        <section class="main-section" id="Introduction_to_javascript" >
+          <header>Introduction to javascript</header>
+          <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them</p>
+        </section>
+        <section class="main-section" id="what_do_you_know">
+          <header>What Do you Know</header>
+          <p>Le JavaScript, créé en 1995 par Brendan Eich (pour la Netscape Communication
+Corporation), est un langage de programmation de scripts orienté objet. Si le terme Java
+est commun au langage du même nom, le JavaScript est radicalement différent.
+La version ES5 date de 2009.
+On crée un instruction Javascript à l'intérieur des balises script </p>
+
+<p>  JavaScript contient une bibliothèque standard d'objets, tels que Array, Date et Math, ainsi qu'un ensemble d'éléments de langage de base tels que des opérateurs, des structures de contrôle et des instructions. JavaScript peut être étendu à diverses fins en y ajoutant des objets supplémentaires ; par exemple : </p>
+
+<ul>
+  <li>JavaScript côté client étend le langage principal en fournissant des objets pour contrôler un navigateur et son modèle d'objet de document (DOM). Par exemple, les extensions côté client permettent à une application de placer des éléments dans un formulaire HTML et de réagir aux événements utilisateur tels que les clics de souris, la saisie dans un formulaire et la navigation dans les pages.</li>
+  
+  <li>JavaScript côté serveur étend le langage principal en fournissant des objets nécessaires à l'exécution de JavaScript sur un serveur. Par exemple, les extensions côté serveur permettent à une application de communiquer avec une base de données, d'assurer la continuité des informations d'un appel à l'autre de l'application ou d'effectuer des manipulations de fichiers sur un serveur.   </li>
+</ul>
+        </section>
+        <section class="main-section" id="how_you_learn_JavaScript">
+          <header>how you learn JavaScript</header>
+          <p>Il est possible, et même conseillé, d'écrire le code Javascript dans un fichier externe,
+portant l'extension .js. Ce fichier est ensuite appelé depuis la page Web au moyen de
+l'élément script  et de son attribut src qui contient l'URL du fichier .js.
+Par exemple dans le fichier hello.js, on écrit :
+<pre>
+    <code>(alert'Hello world!';)</code>
+</pre>
+Et dans le body de la page html, on trouve :
+<pre>
+    <code>&ltscript&gt src="hello.js"&lt/script&gt;</code>
+</pre>
+Pour éviter des problèmes de chargement sur les pages, il est conseillé de placer les
+éléments script juste avant la fermeture de l’élément body.</p>
+
+<p> Une définition de fonction (également appelée déclaration de fonction ou instruction de fonction) se compose du mot-clé function, suivi de :</p>
+<ul>
+<li>Le nom de la fonction.
+<li>Une liste d'arguments de la fonction, entre parenthèses et séparés par des virgules.
+<li> Les instructions JavaScript qui définissent la fonction, entre accolades, { }.
+Par exemple, le code suivant définit une fonction simple nommée square :
+
+<pre>
+    <code>Function square(number) { return number * number; }</code>
+</pre>
+        </section>
+        <section class="main-section" id="Hello_world">
+          <header>Hello world</header>
+          <p>La syntaxe d'une fonction se compose de deux choses :</p> 
+          <ul>
+            <li>son nom, suivi d'un couple de
+parenthèses (une ouvrante et une fermante). Entre les parenthèses se trouvent les
+arguments, que l'on appelle aussi paramètres.</li>
+</ul>
+<pre>
+   <code> &lt;script&gt;
+myFunction();
+&lt;script&gt;</code>
+Par exemple :
+<code>&lt;sript&gt&gt;
+alert('Bonjour');
+// la fonction affiche une boîte de dialogue avec "Bonjour"
+&ltscript&gt</code>
+</pre>
+        </section>
+        <section class="main-section" id="Data_type_of_Variables">
+          <header>Data type of Variables</header>
+          <p>Une variable consiste en un espace de stockage, qui permet de garder en mémoire
+tout type de données. La variable est ensuite utilisée dans les scripts. 
+<ul>
+  <li>Une variable
+contient seulement des caractères alphanumériques, le $ (dollar) et le _ (underscore) ;</li>
+<li>Elle ne peut pas commencer par un chiffre ni prendre le nom d'une fonction existante de
+Javascript.</li>
+</ul>
+<p> On crée la variable et on lui affecte (ou attribue) une valeur :
+<pre>
+    <code>var myVariable = 'Hello';</code>
+</pre> </p>
+</p>
+        </section>
+
+        <section class="main-section" id="the_different_type_of_variables">
+          <header>the different type of variables</header>
+          <p>Une variable peut être de type numérique, mais aussi une chaîne de caractères :
+<pre>
+    <code>&lt;script&gt;
+        var text = 'J\'écris mon texte ici'; /* Avec des apostrophes, le \ sert à
+        échapper une apostrophe intégrée dans le texte, pour ne pas que Javascript pense
+        que le texte s'arrête là.*/
+        &lt;script&gt;</code>
+</pre>
+Une variable peut être de type tableau (array), qui est une liste de valeurs :
+<pre>
+    <code>&lt;script&gt;
+        var myArray = ['valeur1', 'valeur2', 'valeur3'];
+        &lt;script&gt;</code>
+</pre>
+Une variable peut être de type objet (object), qui est une collection de propriétés et de
+valeurs :
+<pre>
+    <code>&lt;script&gt;
+        var myObject = {
+        propriete1: 'valeur1',
+        propriete2: 'valeur2',
+        propriete3: 'valeur3'
+        };
+        &lt;script&gt;</code>
+        Une variable peut enfin être de type booléen (boolean), avec deux états possibles :
+        vrai ou faux (true ou false).
+</pre></p>
+        </section>
+
+        <section class="main-section" id="Arithmetics_Operators">
+          <header>Arithmetics Operators</header>
+          <p>On peut utiliser 5 opérateurs arithmétiques :</p>
+          <ul>
+            <li> l'addition (+), 
+              <li>la soustraction (-),
+                <li> la
+multiplication (*),
+<li> la division (/)
+  <li> et le modulo (%). 
+    <pre>Le modulo est le reste d'une division.
+Par exemple :
+<code>&lt;script&gt;
+var number1 = 3,
+number2 = 2, result;
+result = number1 *
+number2;
+alert(result); //
+Affiche : « 6 »
+&lt;script&gt;</code>
+ou :
+<code>&lt;script&gt;
+var number = 3;
+number = number + 5;
+alert(number); //
+Affiche : « 8 »
+&lt;script&gt;</code>
+qui équivaut à :
+<code>&lt;script&gt;
+var number = 3;
+number += 5;
+alert(number); //
+Affiche : « 8 »
+&lt;script&gt;</code>
+</pre>
+        </section>
+
+        <section class="main-section" id="Logics_Operators">
+          <header>Logics Operators</header>
+          <p>Il y en a 3 :
+<ul>
+  <li>&& qui signifie ET avec par exemple : valeur1 && valeur2
+Cet opérateur vérifie la condition lorsque toutes les valeurs qui lui sont passées valent true.
+<li>|| qui signifie OU avec par exemple : valeur1 || valeur2
+Cet opérateur est plus souple car il renvoie true si une des valeurs qui lui est soumise contient
+true, qu'importent les autres valeurs.
+<li>! qui signifie NON avec par exemple : !valeur
+Cet opérateur se différencie des deux autres car il ne prend qu'une seule valeur à la fois. S'il se
+nomme « NON » c'est parce que sa fonction est d'inverser la valeur qui lui est passée, ainsi true
+deviendra false et inversement.</li>
+</ul>
+        </section>
+
+    </main>
+  </body> 
+</html>
